@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F053572B298EEB4200350588 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053572A298EEB4200350588 /* News.swift */; };
+		F053572D298EFD9B00350588 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053572C298EFD9B00350588 /* NewsViewController.swift */; };
 		F0AE4B3D298ED93D00D570C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE4B3C298ED93D00D570C2 /* AppDelegate.swift */; };
 		F0AE4B3F298ED93D00D570C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE4B3E298ED93D00D570C2 /* SceneDelegate.swift */; };
-		F0AE4B41298ED93D00D570C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE4B40298ED93D00D570C2 /* ViewController.swift */; };
 		F0AE4B44298ED93D00D570C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AE4B42298ED93D00D570C2 /* Main.storyboard */; };
 		F0AE4B46298ED93D00D570C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0AE4B45298ED93D00D570C2 /* Assets.xcassets */; };
 		F0AE4B49298ED93D00D570C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AE4B47298ED93D00D570C2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F053572A298EEB4200350588 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		F053572C298EFD9B00350588 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		F0AE4B39298ED93D00D570C2 /* intro-lab-rororu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intro-lab-rororu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AE4B3C298ED93D00D570C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0AE4B3E298ED93D00D570C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F0AE4B40298ED93D00D570C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0AE4B43298ED93D00D570C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0AE4B45298ED93D00D570C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0AE4B48298ED93D00D570C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F0535726298EEA8400350588 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F053572A298EEB4200350588 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F0535727298EEA8F00350588 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0535728298EEA9600350588 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F053572C298EFD9B00350588 /* NewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F0535729298EEAA600350588 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F0AE4B42298ED93D00D570C2 /* Main.storyboard */,
+				F0AE4B47298ED93D00D570C2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		F0AE4B30298ED93C00D570C2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +90,13 @@
 		F0AE4B3B298ED93D00D570C2 /* intro-lab-rororu */ = {
 			isa = PBXGroup;
 			children = (
+				F0535729298EEAA600350588 /* Storyboard */,
+				F0535728298EEA9600350588 /* Controller */,
+				F0535727298EEA8F00350588 /* View */,
+				F0535726298EEA8400350588 /* Model */,
 				F0AE4B3C298ED93D00D570C2 /* AppDelegate.swift */,
 				F0AE4B3E298ED93D00D570C2 /* SceneDelegate.swift */,
-				F0AE4B40298ED93D00D570C2 /* ViewController.swift */,
-				F0AE4B42298ED93D00D570C2 /* Main.storyboard */,
 				F0AE4B45298ED93D00D570C2 /* Assets.xcassets */,
-				F0AE4B47298ED93D00D570C2 /* LaunchScreen.storyboard */,
 				F0AE4B4A298ED93D00D570C2 /* Info.plist */,
 			);
 			path = "intro-lab-rororu";
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0AE4B41298ED93D00D570C2 /* ViewController.swift in Sources */,
 				F0AE4B3D298ED93D00D570C2 /* AppDelegate.swift in Sources */,
+				F053572B298EEB4200350588 /* News.swift in Sources */,
 				F0AE4B3F298ED93D00D570C2 /* SceneDelegate.swift in Sources */,
+				F053572D298EFD9B00350588 /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
