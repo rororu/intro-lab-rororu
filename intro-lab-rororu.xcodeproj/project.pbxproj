@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F042EDA4298FBC5A0019D1C2 /* NewsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F042EDA3298FBC5A0019D1C2 /* NewsFactory.swift */; };
 		F053572B298EEB4200350588 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053572A298EEB4200350588 /* News.swift */; };
 		F053572D298EFD9B00350588 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053572C298EFD9B00350588 /* NewsViewController.swift */; };
 		F0A9EC32298F881000F21937 /* NewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A9EC31298F881000F21937 /* NewsViewCell.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F042EDA3298FBC5A0019D1C2 /* NewsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFactory.swift; sourceTree = "<group>"; };
 		F053572A298EEB4200350588 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		F053572C298EFD9B00350588 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		F0A9EC31298F881000F21937 /* NewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewCell.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				F053572A298EEB4200350588 /* News.swift */,
+				F042EDA3298FBC5A0019D1C2 /* NewsFactory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				F0A9EC32298F881000F21937 /* NewsViewCell.swift in Sources */,
 				F0AE4B3F298ED93D00D570C2 /* SceneDelegate.swift in Sources */,
 				F053572D298EFD9B00350588 /* NewsViewController.swift in Sources */,
+				F042EDA4298FBC5A0019D1C2 /* NewsFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
