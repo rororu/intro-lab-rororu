@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F053572B298EEB4200350588 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053572A298EEB4200350588 /* News.swift */; };
 		F053572D298EFD9B00350588 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053572C298EFD9B00350588 /* NewsViewController.swift */; };
+		F0A9EC32298F881000F21937 /* NewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A9EC31298F881000F21937 /* NewsViewCell.swift */; };
 		F0AE4B3D298ED93D00D570C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE4B3C298ED93D00D570C2 /* AppDelegate.swift */; };
 		F0AE4B3F298ED93D00D570C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AE4B3E298ED93D00D570C2 /* SceneDelegate.swift */; };
 		F0AE4B44298ED93D00D570C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AE4B42298ED93D00D570C2 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		F053572A298EEB4200350588 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		F053572C298EFD9B00350588 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		F0A9EC31298F881000F21937 /* NewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewCell.swift; sourceTree = "<group>"; };
 		F0AE4B39298ED93D00D570C2 /* intro-lab-rororu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intro-lab-rororu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0AE4B3C298ED93D00D570C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0AE4B3E298ED93D00D570C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		F0535727298EEA8F00350588 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F0A9EC31298F881000F21937 /* NewsViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				F0AE4B3D298ED93D00D570C2 /* AppDelegate.swift in Sources */,
 				F053572B298EEB4200350588 /* News.swift in Sources */,
+				F0A9EC32298F881000F21937 /* NewsViewCell.swift in Sources */,
 				F0AE4B3F298ED93D00D570C2 /* SceneDelegate.swift in Sources */,
 				F053572D298EFD9B00350588 /* NewsViewController.swift in Sources */,
 			);
