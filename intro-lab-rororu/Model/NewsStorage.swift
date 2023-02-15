@@ -1,8 +1,21 @@
-//
-//  NewsStorage.swift
-//  intro-lab-rororu
-//
-//  Created by Роман Романов on 05.02.2023.
-//
-
+import UIKit
 import Foundation
+
+/*protocol NewsStorageProtocol {
+    func loadNew() -> [New]
+    func saveNew(news: [New])
+}
+
+class NewsStorage: NewsStorageProtocol {
+    let storageKey = "storeNews"
+    
+    private var storage = UserDefaults.standard
+    
+    func loadNew() -> [New] {
+        return [New]
+    }
+    
+    func saveNew(news: [New]) {
+    }
+}
+*/
