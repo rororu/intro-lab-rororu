@@ -2,9 +2,8 @@ import WebKit
 import UIKit
 
 class SearchNewViewController: UIViewController {
-    lazy var viewScreen: UIView? = {
-        let view = UIView()
-        view.bounds = self.view.bounds
+    lazy var viewScreen: UIScrollView? = {
+        let view = UIScrollView()
         
         view.backgroundColor = .white
         
@@ -30,11 +29,12 @@ class SearchNewViewController: UIViewController {
         return lable
     }()
     
-    var descriptionScreen: UILabel? = {
+    lazy var descriptionScreen: UILabel? = {
         let lable = UILabel()
         
         //settingLable(lable: lable)
         lable.font = .systemFont(ofSize: 18)
+        settingLable(lable: lable)
         
         return lable
     }()
@@ -44,7 +44,6 @@ class SearchNewViewController: UIViewController {
         
         lable.font = .systemFont(ofSize: 18, weight: .medium)
         lable.textColor = .gray
-        lable.backgroundColor = .green
         
         return lable
     }()
@@ -78,9 +77,9 @@ class SearchNewViewController: UIViewController {
         lable.textColor = .black
     }
     
-    final func settingText(titleText: String, descriptionText: String, creatorText: String, buttonText: String) {
+    final func settingText(titleText: String, descriptionText: String, creatorText: String, buttonText: String, image: UIImage) {
         titleScreen?.text = titleText
-        //titleScreen?.sizeToFit()
+        imageScreen?.image = image
         
         if descriptionText != "Not description" {
             descriptionScreen?.text = descriptionText
@@ -97,10 +96,10 @@ class SearchNewViewController: UIViewController {
         let topPadding = window.safeAreaInsets.top
         let margin: CGFloat = 10
         
-        viewScreen?.frame = self.view.bounds
+        viewScreen?.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height)
         
         imageScreen?.frame = CGRect(x: margin,
-                                    y: (navigationController?.navigationBar.frame.size.height ?? 0) + topPadding,
+                                    y: margin,
                                     width: self.view.frame.size.width - margin * 2,
                                     height: 200)
         
@@ -126,6 +125,8 @@ class SearchNewViewController: UIViewController {
                                width: self.view.frame.size.width - margin * 2,
                                height: 18)
         
+        //viewScreen?.contentSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height * 2)
+                                         /*height: imageScreen.frame.size.height + titleScreen?.frame.size.height + descriptionScreen?.frame.size.height + creator.frame.size.height + webView.frame.size.height + imageScreen.frame.origin.y + margin * 4)*/
     }
     
     @objc private func touchesButton(_ sender: UIButton) {

@@ -161,7 +161,8 @@ class NewsViewController: UITableViewController {
         nextViewController.settingText(titleText: currentCell._titleView?.text ?? "No title",
                                        descriptionText: descriptionText,
                                        creatorText: currentCell._newspaperView?.text ?? "o creator",
-                                       buttonText: link)
+                                       buttonText: link,
+                                       image: currentCell._imageView?.image ?? UIImage())
         
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
